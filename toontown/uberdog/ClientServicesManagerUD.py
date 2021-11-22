@@ -18,18 +18,6 @@ import anydbm, math, os
 import urllib2, time, urllib
 import cookielib, socket
 
-def rejectConfig(issue, securityIssue=True, retarded=True):
-    print
-    print
-    print 'Lemme get this straight....'
-    print 'You are trying to use remote account database type...'
-    print 'However,', issue + '!!!!'
-    if securityIssue:
-        print 'Do you want this server to get hacked?'
-    if retarded:
-        print '"Either down\'s or autism"\n  - JohnnyDaPirate, 2015'
-    print 'Go fix that!'
-    exit()
 
 def entropy(string):
     prob = [float(string.count(c)) / len(string) for c in dict.fromkeys(list(string))]
@@ -71,9 +59,6 @@ if accountDBType == 'remote':
 minAccessLevel = config.GetInt('min-access-level', 100)
 
 def executeHttpRequest(url, **extras):
-    # TO DO: THIS IS QUITE DISGUSTING
-    # MOVE THIS TO ToontownInternalRepository (this might be interesting for AI)
-    ##### USE PYTHON 2.7.9 ON PROD WITH SSL AND CLOUDFLARE #####
     _data = {}
     if len(extras.items()) != 0:
         for k, v in extras.items():
@@ -131,7 +116,7 @@ def judgeName(name):
     return True
 
 # --- ACCOUNT DATABASES ---
-# These classes make up the available account databases for Toontown 2.0.
+# These classes make up the available account databases for Toontown Sandbox.
 # DeveloperAccountDB is a special database that accepts a username, and assigns
 # each user with 700 access automatically upon login.
 
