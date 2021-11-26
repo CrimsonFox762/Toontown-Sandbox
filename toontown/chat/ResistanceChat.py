@@ -29,8 +29,8 @@ resistanceDict = {
         'menuName': TTLocalizer.ResistanceToonupMenu,
         'itemText': TTLocalizer.ResistanceToonupItem,
         'chatText': TTLocalizer.ResistanceToonupChat,
-        'values': [10, 20, 40, 80, -1],
-        'items': [0, 1, 2, 3, 4]
+        'values': [10, 20, 30, 40, 50, 60, 70, 80, -1],
+        'items': [0, 1, 2, 3, 4, 5, 6, 7, 8]
     },
     RESISTANCE_MONEY: {
         'menuName': TTLocalizer.ResistanceMoneyMenu,
