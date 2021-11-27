@@ -36,8 +36,8 @@ resistanceDict = {
         'menuName': TTLocalizer.ResistanceMoneyMenu,
         'itemText': TTLocalizer.ResistanceMoneyItem,
         'chatText': TTLocalizer.ResistanceMoneyChat,
-        'values': [100, 200, 350, 600, 1200, 2400],
-        'items': [0, 1, 2, 3, 4, 5]
+        'values': [100, 200, 300, 400, 600, 900, 1200, 1800, 2200, 2400, 3000],
+        'items': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     },
     RESISTANCE_RESTOCK: {
         'menuName': TTLocalizer.ResistanceRestockMenu,
@@ -77,8 +77,8 @@ resistanceDict = {
         'menuName': TTLocalizer.ResistanceTicketsMenu,
         'itemText': TTLocalizer.ResistanceTicketsItem,
         'chatText': TTLocalizer.ResistanceTicketsChat,
-        'values': [200, 400, 600, 800, 1200],
-        'items': [0, 1, 2, 3, 4]
+        'values': [200, 400, 600, 800, 1200, 1600, 2000],
+        'items': [0, 1, 2, 3, 4, 5, 6]
     }
 }
 
