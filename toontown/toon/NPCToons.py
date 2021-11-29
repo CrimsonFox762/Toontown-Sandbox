@@ -165,7 +165,7 @@ def createLocalNPC(npcId):
 
 # Some buildings don't have NPCs, so we need to store their zone IDs here:
 badBlocks = [
-    2606, 2602, 2708, 2705, 2704, 2701, 2803, 2804, 2809, 2805, 5607, 1707,
+    2708, 2705, 2704, 2701, 2803, 2804, 2809, 2805, 5607, 1707,
     5609, 3605, 3703
 ]
 
@@ -181,11 +181,11 @@ def isZoneProtected(zoneId):
 
 lnames = TTLocalizer.NPCToonNames
 NPCToonDict = {
- 20000: (-1, lnames[20000], ('dls', 'ms', 'm', 'm', 7, 0, 7, 7, 2, 6, 2, 6, 2, 16), 'm', 1, NPC_SPECIALQUESTGIVER),
+ 20000: (-1, lnames[20000], ('dss', 'ms', 'm', 'm', 7, 0, 7, 7, 2, 6, 2, 6, 2, 16), 'm', 1, NPC_SPECIALQUESTGIVER),
  999: (-1, lnames[999], 'r', 'm', 1, NPC_TAILOR),
  1000: (-1, lnames[1000], 'r', 'm', 1, NPC_HQ),
  20001: (-1, lnames[20001], ('dss', 'ms', 'm', 'm', 17, 0, 17, 17, 3, 3, 3, 3, 7, 2), 'm', 1, NPC_BLOCKER),
- 20002: (-1, TTLocalizer.TutorialHQOfficerName, ('dls', 'ms', 'm', 'm', 6, 0, 6, 6, 0, 10, 0, 10, 2, 9), 'm', 1, NPC_SPECIALQUESTGIVER),
+ 20002: (-1, TTLocalizer.TutorialHQOfficerName, ('dss', 'ms', 'm', 'm', 6, 0, 6, 6, 0, 10, 0, 10, 2, 9), 'm', 1, NPC_SPECIALQUESTGIVER),
  2002: (2514, lnames[2002], ('hss', 'ls', 'l', 'm', 4, 0, 4, 4, 0, 3, 0, 3, 1, 18), 'm', 1, NPC_REGULAR),
  2003: (2516, lnames[2003], ('cll', 'ms', 'l', 'm', 18, 0, 18, 18, 0, 4, 0, 4, 1, 15), 'm', 1, NPC_REGULAR),
  2004: (2521, lnames[2004], ('rll', 'md', 'm', 'f', 15, 0, 5, 7, 3, 5, 3, 5, 0, 3), 'f', 1, NPC_TAILOR),
@@ -206,6 +206,8 @@ NPCToonDict = {
  2019: (2513, lnames[2018], ('pls', 'ls', 'l', 'm', 9, 0, 9, 9, 98, 27, 86, 27, 38, 27), 'm', 1, NPC_SCIENTIST),
  2020: (2513, lnames[2020], ('hss', 'ms', 'm', 'm', 20, 0, 20, 20, 97, 27, 86, 27, 37, 27), 'm', 1, NPC_SCIENTIST),
  2021: (2000, lnames[2021], ('dss', 'ls', 's', 'm', 13, 0, 13, 13, 1, 6, 1, 6, 0, 18), 'm', 1, NPC_GLOVE),
+ 2022: (2606, lnames[2022], ('cls', 'ms', 'm', 'm', 2, 0, 2, 2, 14, 9, 10, 9, 1, 14), 'm', 0, NPC_REGULAR),
+ 2023: (2602, lnames[2023], ('mss', 'ms', 'm', 'm', 2, 0, 2, 2, 14, 9, 10, 9, 1, 14), 'm', 0, NPC_REGULAR),
  2101: (2601, lnames[2101], ('rll', 'ms', 'l', 'm', 15, 0, 15, 15, 0, 9, 0, 9, 0, 6), 'm', 1, NPC_REGULAR),
  2102: (2619, lnames[2102], 'r', 'f', 0, NPC_REGULAR),
  2103: (2616, lnames[2103], ('csl', 'ss', 's', 'm', 9, 0, 8, 5, 0, 11, 0, 11, 2, 10), 'm', 0, NPC_REGULAR),
