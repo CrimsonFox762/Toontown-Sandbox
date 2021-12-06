@@ -14,12 +14,12 @@
   "fullscreen": false,
   "language": "English",
   "loadDisplay": "pandagl",
-  "musicVol": 1.0,
+  "musicVol": 0.0,
   "res": [
     1280,
     720
   ],
-  "sfxVol": 1.0,
+  "sfxVol": 0.0,
   "speedchatPlus": true,
   "talk2speech": false,
   "toonChatSounds": true,
