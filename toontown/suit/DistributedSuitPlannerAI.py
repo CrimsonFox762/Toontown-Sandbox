@@ -668,7 +668,9 @@ class DistributedSuitPlannerAI(DistributedObjectAI.DistributedObjectAI, SuitPlan
             1: 0,
             2: 0,
             3: 0,
-            4: 0
+            4: 0,
+            5: 0,
+            6: 0
         }
         for sp in self.air.suitPlanners.values():
             sp.countNumBuildingsPerHeight(numPerHeight)
@@ -677,6 +679,8 @@ class DistributedSuitPlannerAI(DistributedObjectAI.DistributedObjectAI, SuitPlan
             numPerHeight[2] += sp.pendingBuildingHeights.count(2)
             numPerHeight[3] += sp.pendingBuildingHeights.count(3)
             numPerHeight[4] += sp.pendingBuildingHeights.count(4)
+            numPerHeight[5] += sp.pendingBuildingHeights.count(5)
+            numPerHeight[6] += sp.pendingBuildingHeights.count(6)
         while numToAssign > 0:
             smallestCount = None
             smallestTracks = []
@@ -696,7 +700,7 @@ class DistributedSuitPlannerAI(DistributedObjectAI.DistributedObjectAI, SuitPlan
             buildingTrackIndex = SuitDNA.suitDepts.index(buildingTrack)
             smallestCount = None
             smallestHeights = []
-            for height in xrange(5):
+            for height in xrange(7):
                 if totalWeightPerHeight[height]:
                     count = float(numPerHeight[height]) / float(self.BUILDING_HEIGHT_DISTRIBUTION[height])
                     if (smallestCount is None) or (count < smallestCount):
@@ -740,6 +744,8 @@ class DistributedSuitPlannerAI(DistributedObjectAI.DistributedObjectAI, SuitPlan
                     totalWeightPerHeight[2] -= weight * heights[2]
                     totalWeightPerHeight[3] -= weight * heights[3]
                     totalWeightPerHeight[4] -= weight * heights[4]
+                    totalWeightPerHeight[5] -= weight * heights[5]
+                    totalWeightPerHeight[6] -= weight * heights[6]
                     if totalWeightPerTrack[buildingTrackIndex] <= 0:
                         buildingTrack = None
                     if totalWeightPerHeight[buildingHeight] <= 0:
