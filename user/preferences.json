@@ -1,12 +1,15 @@
 {
   "acceptingNewFriends": {
-    "100000010": true
+    "100000010": true,
+    "100000013": true
   },
   "acceptingNonFriendWhispers": {
-    "100000010": true
+    "100000010": true,
+    "100000013": true
   },
   "acceptingTeleport": {
-    "100000010": true
+    "100000010": true,
+    "100000013": true
   },
   "cogInterface": true,
   "fov": 52.0,
