@@ -43,7 +43,7 @@ suitProperties = {'f': (4.0 / cSize, SuitDNA.corpPolyColor, ['flunky', 'glasses'
                   'mb': (5.3 / cSize, SuitDNA.moneyPolyColor, ['moneybags'], '', 6.97),
                   'ls': (6.5 / bSize, VBase4(0.5, 0.85, 0.75, 1.0), ['loanshark'], '', 8.58),
                   'rb': (7.0 / aSize, SuitDNA.moneyPolyColor, ['yesman'], 'robber-baron.jpg', 8.95),
-                  'bfh': (7.5 / cSize, SuitDNA.moneyPolyColor, ['tightwad'], 'big-fish.jpg', 9.0),
+                  'fh': (7.5 / cSize, SuitDNA.moneyPolyColor, ['tightwad'], 'fish.jpg', 9.0),
                   # Sellbots
                   'cc': (3.5 / cSize, VBase4(0.55, 0.65, 1.0, 1.0), ['coldcaller'], '', 4.63),
                   'tm': (3.75 / bSize, SuitDNA.salesPolyColor, ['telemarketer'], '', 5.24),

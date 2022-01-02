@@ -126,7 +126,7 @@ nc = (('phone', 'phone', 5), ('throw-object', 'throw-object', 5))
 mb = (('magic1', 'magic1', 5), ('throw-paper', 'throw-paper', 3.5))
 ls = (('throw-paper', 'throw-paper', 5), ('throw-object', 'throw-object', 5), ('hold-pencil', 'hold-pencil', 5))
 rb = (('glower', 'glower', 5), ('cigar-smoke', 'cigar-smoke', 8), ('magic1', 'magic1', 5), ('golf-club-swing', 'golf-club-swing', 5))
-bfh = (('magic1', 'magic1', 5), ('throw-paper', 'throw-paper', 3.5))
+fh = (('magic1', 'magic1', 5), ('throw-paper', 'throw-paper', 3.5))
 bf = (('pickpocket', 'pickpocket', 5),
  ('rubber-stamp', 'rubber-stamp', 5),
  ('shredder', 'shredder', 3.5),
